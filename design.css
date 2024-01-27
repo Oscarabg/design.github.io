@@ -1,0 +1,269 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins','sans-serif';
+}
+
+main{
+ min-height: 100vh;
+ background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.glass{
+ min-height: 80vh;
+ width: 60%;
+ background: #fff;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+ z-index: 2;
+ border-radius: 1.8em;
+ backdrop-filter: blur(2.1em);
+ display: flex;
+ flex-direction: row;
+}
+
+h1{
+ color:#00b9da;
+ font-size: 1.6em;
+ font-weight: 500;
+}
+
+h2{
+ color: rgba(56, 20, 129, 0.933);
+ font-size: 1.3em;
+ font-weight: 400;
+}
+
+.utilisateur img{
+ width: 100px;
+ height: 100px;
+ border-radius: 60px;
+}
+
+.utilisateur p{
+ font-size: 1.3em;
+ font-weight: 400;
+ color: rgba(56, 20, 129, 0.933);
+}
+
+.cercle1,.cercle2{
+ width: 13em;
+ height: 13em;
+ background: #fff;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+ position: absolute;
+ border-radius: 50%;
+}
+
+.cercle1{
+ top: 5%;
+ left: 10%;
+ background: rgba(96, 19, 169, 0.566);
+ transition: ease-in-out;
+}
+
+.cercle1:hover{
+ background: #fff;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+}
+
+.cercle2{
+ bottom: 5%;
+ right: 10%;
+ background: hsl(278, 61%, 45%);
+ transition: ease-in-out;
+}
+
+.cercle2:hover{
+ background: #fff;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+}
+
+.tab-board{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding: 1.5rem;
+}
+
+.link img{
+ width: 50px;
+ height: 50px;
+ border-radius: 30px;
+}
+
+.pro-join{
+ background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+ border-radius: 30px;
+ color:#fff;
+}
+
+.pro-join img{
+ width: 50px;
+ height: 50px;
+ border-radius: 20px;
+}
+
+.pro-join p{
+ text-align: center;
+ font-size: 1.3em;
+ color: rgba(56, 20, 129, 0.933);
+}
+
+.jeux{
+ flex: 2;
+ padding: 0 4em;
+ margin-right: 40px;
+}
+
+.status{
+ margin: 0.55rem 0;
+}
+
+.status input{
+ border: none;
+ background: #fff;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+ padding: 10px;
+ border-radius: 10px;
+}
+
+.cards{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+
+.cards .card{
+ display: flex;
+ align-items: center;
+ padding: 23px;
+ justify-content: space-between;
+ background: #fff;
+ border-radius: 15px;
+ background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),
+ rgba(255, 255, 255, 0.3));
+}
+
+.cards .card img{
+ width: 130px;
+ height: 130px;
+ border-radius: 20px;
+ background-position: center;
+}
+
+.card .infos{
+ margin: 20px;
+}
+
+.card p{
+ font-size: 1.2em;
+ color: #000;
+}
+
+.card .progress{
+ background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+ border-radius: 30px;
+ width: 100%;
+ height: 7px;
+ border-radius: 1em;
+ position: relative;
+ overflow: hidden;
+}
+
+.card .progress::after{
+ content: "";
+ width: 100%;
+ height: 100%;
+ background: rgb(178, 204, 250);
+ position: absolute;
+ left: 60%;
+}
+
+.card .pourcentage{
+ font-weight: 400;
+ font-size: 1em;
+ color:rgb(81, 76, 174)
+}
+
+.reseaux{
+ background: #1550b5;
+ padding: 15px;
+}
+
+.reseaux .reseau{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.para p{
+ font-size: 1.2em;
+ font-family: 'Poppins', 'sans-serif';
+ font-weight: 500;
+ color:#fff;
+ margin: 10px 0;
+ letter-spacing: 1px;
+ transition: ease-in-out;
+}
+
+p:hover{
+ color:blueviolet;
+ 
+}
+.reseau-social a{
+ font-size: 1em;
+ font-weight: 700;
+ text-decoration: none;
+ margin: 20px;
+ color: #fff;
+ transition: ease-in-out;
+}
+
+a:hover{
+ color:blueviolet
+}
+
+footer{
+ background:rgb(44, 126, 156);
+ padding: 10px;
+}
+
+.copyrights{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+.copyrights .copyright{
+ font-size: 1.1em;
+ color:#fff;
+ transition: ease-in;
+
+}
+.copyright:hover{
+ color: blueviolet;
+}
+
+.copyrights .cgv{
+ text-decoration: none;
+ font-size: 1.1em;
+ color:#ffffff;
+ transition: ease-in;
+}
+
+.cgv:hover{
+ color:blueviolet;
+}
